@@ -22,6 +22,11 @@ With motionia you can animate elements by just one line of code.
 
 Just add a script path of motionia via **JSDELIVR** into the head of your project
 
+```
+<script src="https://cdn.jsdelivr.net/gh/abhiprojectz/motionia/dist/motionia.js"></script>
+```
+
+
 Use motionia in inline script as:
 
 ``` 
@@ -31,6 +36,11 @@ Use motionia in inline script as:
 ```
 
 > Target can be any html element.
+
+
+
+> Elements can be a ``` id ``` , ``` class ``` or ``` body,p etc ``` html parametric element.
+
 
 > anim refers to animation name!
 
