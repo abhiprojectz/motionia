@@ -28,7 +28,7 @@ With motionia you can animate elements by just one line of code.
 
 # Getting started
 
-![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/animations.gif)
+![](https://raw.githubusercontent.com/abhiprojectz/motionia@v1.0/master/assest/animations.gif)
 
 
 
