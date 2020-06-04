@@ -28,7 +28,7 @@ With motionia you can animate elements by just one line of code.
 
 # Getting started
 
-![](https://raw.githubusercontent.com/abhiprojectz/motionia@v1.0/master/assest/animations.gif)
+![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/animations.gif)
 
 
 
@@ -36,7 +36,7 @@ With motionia you can animate elements by just one line of code.
 Just add a script path of motionia via **JSDELIVR** into the head of your project
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/abhiprojectz/motionia/dist/motionia.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/abhiprojectz/motionia@v1.0/dist/motionia.js" defer></script>
 ```
 
 
