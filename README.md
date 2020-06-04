@@ -193,9 +193,17 @@ Try out: ``` flipScaleIn ``` , ```flipScaleOut``` , ```slideRotate``` etc combin
 
 Suppose you wanna animate a object that similates anim of a door just like a door opens? **Imagine it** You can animate element by just its Name!
 
+![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/unnamed%20(7).gif)
+
+
+
 ## Animate a element as a door opens in **UP** , **DOWN** , **LEFT** , **RIGHT**
 
 Just add the directions parameters at the end of the anim name!
+
+![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/unnamed%20(6).gif)
+
+
 
 use:
 
