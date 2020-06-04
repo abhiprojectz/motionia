@@ -28,7 +28,10 @@ With motionia you can animate elements by just one line of code.
 
 # Getting started
 
-![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/unnamed.gif)
+![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/animations.gif)
+
+
+
 
 Just add a script path of motionia via **JSDELIVR** into the head of your project
 
@@ -161,9 +164,16 @@ bounce
 shake
 jelly
 wobble
+
+![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/unnamed%20(10).gif)
+
 ripple
 
 # Mixing 2 anims together!
+
+![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/unnamed%20(9).gif)
+
+
 
 Yeah, with motionia you can mix one anim to the other. its very simple just **mix anims** name which is one & first of a kind ,with each other and hola!
 
@@ -218,6 +228,8 @@ motionia("#target", "doorRight")
 
 # Animate background of any element!
 
+
+
 Animate background of any element by just using some basic parameters as direction parameters.
 
 That is just add direction to **Move** the background in that direction often usefull in making **Landscape** anims easily by just ONE LINE OF CODE!!
@@ -235,6 +247,9 @@ motionia("#target", "bgRight")
 
 
 # Animating document background!
+
+![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/2d-video-game-bk-effect.3gif.gif)
+
 
 Wanna animate background , you can use all the above **BASE** anims and also can make their combos + too add appearing in or out depends upon you.
 
@@ -313,6 +328,7 @@ motionia("#target", "rollInBlur")
 
 
 
+
 ## Up, Down , left & right parameters example
 
 Selecting above anims correctly for your need is a **Art** just master it & add customization accordingly.
@@ -335,6 +351,12 @@ motionia("#div","slideY","10px")
 // px can be % em vh vw etc.
 
 ```
+
+# The end 
+
+i'll keep updating motionia.
+
+![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/7SIR.gif)
 
  Don't forget to give motionia a **STAR** & a share thanks.
 
