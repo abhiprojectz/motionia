@@ -24,6 +24,16 @@ With motionia you can animate elements by just one line of code.
 
 [Experiment with it here](https://abhiprojectz.github.io/motionia/)
 
+# Examples & Demos
+
+Visit my codepen for motionia.js examples and demos and to grasp easily what motionia can actually do.
+
+[Abhiprojectz on Codepen](https://codepen.io/abhiprojectz)
+
+[Motionia.js - animating the door](https://codepen.io/abhiprojectz/pen/BajyQPq)
+
+[Animating backgrounds](https://codepen.io/abhiprojectz/pen/OJMPWbG)
+
 
 
 # Getting started
@@ -235,11 +245,13 @@ motionia("#target", "doorRight")
 # Animate background of any element!
 
 
-
 Animate background of any element by just using some basic parameters as direction parameters.
 
 That is just add direction to **Move** the background in that direction often usefull in making **Landscape** anims easily by just ONE LINE OF CODE!!
 
+visit this codepen demo , in that **gradients background is taken**.
+
+[Animating backgrounds](https://codepen.io/abhiprojectz/pen/OJMPWbG)
 
 use:
 
