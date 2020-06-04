@@ -267,6 +267,50 @@ motionia("#target", "color", "red", "#000", "teal")
 > Color will work in any typo that is hsl, hex , rgba , dex or predefined name etc.
 
 
+# Animate a rotating effects that fits your need.
+
+![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/svg_motion_trails_dribbble.gif)
+
+
+
+There is a prebuilt anim for rotate motion that is **rotateIn** or **rotateOut** also you may built more by mixing that is scaleRotateIn etc but to make it adjustable just **customize it**
+
+> Suppose you need turn a icon by 90 degrees
+
+> You may also use it for **fliping**
+
+use:
+
+```
+
+motionia("#icon", "rotate", "90deg")
+
+```
+
+Just specify the angle that 90deg, 100deg, etc.
+
+# Adding blur effects to anim itself!
+
+![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/MotionBlur_motionblur_example.gif)
+
+The above anim is created by mixing **bounceMin** + **Blur**
+
+Upto now we can add a blur effect to our elements using focusIn etc but what about adding this to **Anims** itself!
+
+> Just add **Blur** at the anims name.
+
+use:
+
+```
+
+motionia("#target", "scaleInBlur")
+
+or 
+
+motionia("#target", "rollInBlur")
+
+```
+
 
 
 ## Up, Down , left & right parameters example
