@@ -36,6 +36,8 @@ Visit my codepen for motionia.js examples and demos and to grasp easily what mot
 
 [Animating lists](https://codepen.io/abhiprojectz/pen/KKVwoNp)
 
+[Animating Loaders](https://codepen.io/abhiprojectz/pen/MWKYVMo)
+
 
 # Getting started
 
