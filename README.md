@@ -84,7 +84,7 @@ There are 100+ builtin animations + capability to create a lot more..
 
 ### Appear In 
 
-> Add ``` In ``` to make a appering anim.
+> Add ``` In ``` to make a appearing anim.
 
 fadeIn
 
@@ -114,7 +114,7 @@ swingIn
 
 and a lot more!
 
-### Disapper Out 
+### Disappear Out 
 
 > add ``` Out ``` to disappear a element
 
@@ -192,7 +192,7 @@ ripple
 
 Yeah, with motionia you can mix one anim to the other. its very simple just **mix anims** name which is one & first of a kind ,with each other and hola!
 
-Why to mix? Inorder to get a cool amazing animation no need to wrtie a page long **CSS KEYFRAMES** only 1,2 words name is **ENOUGH!**
+Why to mix? In order to get a cool amazing animation no need to write a page long **CSS KEYFRAMES** only 1,2 words name is **ENOUGH!**
 
 > To mix anim suppose make a element rotate and then scale!
 
@@ -208,7 +208,7 @@ This will first make the object rotate and then scale it.
 motionia("target", "scaleRotateIn")
 ```
 
-**In this way you can multipy the number of above all anims by just Double**
+**In this way you can multiply the number of above all anims by just Double**
 
 Try out: ``` flipScaleIn ``` , ```flipScaleOut``` , ```slideRotate``` etc combinations!
 
@@ -216,7 +216,7 @@ Try out: ``` flipScaleIn ``` , ```flipScaleOut``` , ```slideRotate``` etc combin
 
 # Pre built awesome 3D anims.
 
-Suppose you wanna animate a object that similates anim of a door just like a door opens? **Imagine it** You can animate element by just its Name!
+Suppose you wanna animate a object that simulates anim of a door just like a door opens? **Imagine it** You can animate element by just its Name!
 
 Visit this codepen demo.
 
@@ -252,7 +252,7 @@ motionia("#target", "doorRight")
 
 Animate background of any element by just using some basic parameters as direction parameters.
 
-That is just add direction to **Move** the background in that direction often usefull in making **Landscape** anims easily by just ONE LINE OF CODE!!
+That is just add direction to **Move** the background in that direction often useful in making **Landscape** anims easily by just ONE LINE OF CODE!!
 
 visit this codepen demo , in that **gradients background is taken**.
 
@@ -293,7 +293,7 @@ Wait....whats **Z** at the end this will animate body's transformation in z axis
 
 # Animate color of a element quickly 
 
-You can pass your  favourite colors upto 3 to motionia's color base anim.
+You can pass your favourite colors up to 3 to motionia's color base anim.
 
 use:
 
@@ -315,7 +315,7 @@ There is a prebuilt anim for rotate motion that is **rotateIn** or **rotateOut**
 
 > Suppose you need turn a icon by 90 degrees
 
-> You may also use it for **fliping**
+> You may also use it for **flipping**
 
 use:
 
@@ -359,7 +359,7 @@ Selecting above anims correctly for your need is a **Art** just master it & add 
 ### Swinging a button with a id **#btn** 
 
 ```
-motiona("#btn","swingUp")
+motionia("#btn","swingUp")
 motionia("#btn","swingRight")
 
 ```
