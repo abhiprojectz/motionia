@@ -4,6 +4,8 @@
 
 **Motionia** - a lightweight simplified on demand animation library.
 
+[![Gitter](https://badges.gitter.im/Motionia-js/community.svg)](https://gitter.im/Motionia-js/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 ![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/keyframe-challenge-large.gif)
 
 With motionia you can animate elements by just one line of code.
