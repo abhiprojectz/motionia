@@ -34,6 +34,7 @@ Visit my codepen for motionia.js examples and demos and to grasp easily what mot
 
 [Animating backgrounds](https://codepen.io/abhiprojectz/pen/OJMPWbG)
 
+[Animating lists](https://codepen.io/abhiprojectz/pen/KKVwoNp)
 
 
 # Getting started
