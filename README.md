@@ -192,7 +192,7 @@ ripple
 
 Yeah, with motionia you can mix one anim to the other. its very simple just **mix anims** name which is one & first of a kind ,with each other and hola!
 
-Why to mix? Inorder to get a cool amazing animation no need to wrtie a page long **CSS KEYFRAMES** only 1,2 words name is **ENOUGH!**
+Why to mix? Inorder to get a cool amazing animation no need to write a page long **CSS KEYFRAMES** only 1,2 words name is **ENOUGH!**
 
 > To mix anim suppose make a element rotate and then scale!
 
