@@ -4,7 +4,7 @@
 
 **Motionia** - a lightweight simplified on demand animation library.
 
-[![Gitter](https://badges.gitter.im/Motionia-js/community.svg)](https://gitter.im/Motionia-js/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![](https://img.shields.io/twitter/follow/abhiprojectz.svg?style=social)](https://twitter.com/abhiprojectz)
 
 ![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/keyframe-challenge-large.gif)
 
