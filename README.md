@@ -8,9 +8,9 @@
 
 ![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/keyframe-challenge-large.gif)
 
-With motionia you can animate elements by just one line of code.
+With motionia, you can animate elements with just one line of code.
 
-> lightweight, simple fast & easiest to integrate.
+> lightweight, simple, fast & easy to integrate.
 
 ``` 
 
@@ -45,9 +45,6 @@ Visit my codepen for motionia.js examples and demos and to grasp easily what mot
 
 ![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/animations.gif)
 
-
-
-
 Just add a script path of motionia via **JSDELIVR** into the head of your project
 
 ```
@@ -65,26 +62,23 @@ Use motionia in inline script as:
 
 > Target can be any html element.
 
+> Elements can be an `id` , `class` or `body`, `p`, etc. html parametric element.
 
-
-> Elements can be a ``` id ``` , ``` class ``` or ``` body,p etc ``` html parametric element.
-
-
-> anim refers to animation name!
+> anim refers to the animation name.
 
 # Features
 
-There is a lot of potential in motionia just keep exploring it.
+There is a lot of potential in motionia; keep exploring it.
 
 ## Animations lists
 
-There are 100+ builtin animations + capability to create a lot more..
+There are 100+ built-in animations and the capability to create many more.
 
 ![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/react-spring.gif)
 
 ### Appear In 
 
-> Add ``` In ``` to make a appering anim.
+> Add `In` to make an "appearing" animation:
 
 fadeIn
 
@@ -112,11 +106,11 @@ tiltIn
 
 swingIn
 
-and a lot more!
+...and many more!
 
-### Disapper Out 
+### Disappear Out 
 
-> add ``` Out ``` to disappear a element
+> add `Out` to disappear an element
 
 fadeOut
 
@@ -127,57 +121,62 @@ rollOut
 slitOut 
 
 shadowIn
+
 popIn
+
 puffIn
+
 blutIn
+
 expandIn
+
 explodeOut
 
+...and more!
 
-etc 
-
-# Wanna customize ?
+# Wanna customize?
 
 ![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/loader-2.gif)
 
-You can customize above anim easily without writing a long code all you need is just A **LINE!!**
+You can customize above anim easily without writing long code all you need is **ONE LINE!!**
 
-## Make a element slide right by some amount
+## Make an element slide right by some amount
 
-> Use motionia("div", "slideX" , "100px");
+> Use motionia("div", "slideX", "100px");
 
 That's all!
 
 ```
-
 motionia("target", "slideY" , "100px");
-
 ```
 
 # Customize intensity of a anim!
 
-Some anim can be minimized or maximized in order to meet our requirements as sometimes we need to gain more **ATTENTION** of a user!
+Some anim can be minimized or maximized in order to meet our requirements as sometimes we need to gain more **ATTENTION** from users!
 
 
-> Just add **Min** or **Max** at the end of a anim!
+> Just append **Min** or **Max** to the end of an anim name!
 
 
-## Create a vibrate anim for a element like a button
-
-use:
+## Create a vibrate anim for a element like a button:
 
 ```
 motionia("#btn","vibrateMax")
 motionia("#btn","vibrateMin")
 ```
 
-### Following anims support min pr max feature.
+### Following anims support min pr max feature:
 
-blink 
+blink
+
 vibrate
+
 bounce
+
 shake
+
 jelly
+
 wobble
 
 ![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/unnamed%20(10).gif)
@@ -188,53 +187,40 @@ ripple
 
 ![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/unnamed%20(9).gif)
 
-
-
 Yeah, with motionia you can mix one anim to the other. its very simple just **mix anims** name which is one & first of a kind ,with each other and hola!
 
-Why to mix? Inorder to get a cool amazing animation no need to wrtie a page long **CSS KEYFRAMES** only 1,2 words name is **ENOUGH!**
+Why mix? No need to write long **CSS KEYFRAMES** for a cool animation -- a one or two word name is **ENOUGH!**
 
-> To mix anim suppose make a element rotate and then scale!
-
+> Mix anims to make an element rotate and scale:
 ```
 motionia("target", "rotateScaleIn")
 ```
 
-This will first make the object rotate and then scale it.
+This will make the object rotate first, then scale it.
 
-> Mixing is amazing!! & its **CONVERSE** is also possible, now  Make a object first scale and then rotate!
+> The **CONVERSE** is also possible: make an element scale *first*, then rotate:
 
 ```
 motionia("target", "scaleRotateIn")
 ```
 
-**In this way you can multipy the number of above all anims by just Double**
+**In this way, you can multiply the number of above all anims by just adding Double**
 
-Try out: ``` flipScaleIn ``` , ```flipScaleOut``` , ```slideRotate``` etc combinations!
+Try out: `flipScaleIn` , `flipScaleOut` , `slideRotate` combinations (and more!).
 
+# Prebuilt 3D anims
 
+Suppose you want to animate an element to look like a door opening? **Imagine it** You can animate element by just its Name!
 
-# Pre built awesome 3D anims.
-
-Suppose you wanna animate a object that similates anim of a door just like a door opens? **Imagine it** You can animate element by just its Name!
-
-Visit this codepen demo.
-
-[Animate a door easily](https://codepen.io/abhiprojectz/pen/BajyQPq)
-
+Visit this codepen demo: [Animate a door easily](https://codepen.io/abhiprojectz/pen/BajyQPq)
 
 ![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/unnamed%20(7).gif)
-
-
 
 ## Animate a element as a door opens in **UP** , **DOWN** , **LEFT** , **RIGHT**
 
 Just add the directions parameters at the end of the anim name!
 
-
 ![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/unnamed%20(6).gif)
-
-
 
 use:
 
@@ -243,12 +229,9 @@ motionia("#target", "doorUp")
 motionia("#target", "doorDown")
 motionia("#target", "doorLeft")
 motionia("#target", "doorRight")
-
-
 ```
 
 # Animate background of any element!
-
 
 Animate background of any element by just using some basic parameters as direction parameters.
 
@@ -267,12 +250,9 @@ motionia("#target", "bgLeft")
 motionia("#target", "bgRight")
 ```
 
-
-
 # Animating document background!
 
 ![](https://raw.githubusercontent.com/abhiprojectz/motionia/master/assest/2d-video-game-bk-effect.3gif.gif)
-
 
 Wanna animate background , you can use all the above **BASE** anims and also can make their combos + too add appearing in or out depends upon you.
 
@@ -280,16 +260,15 @@ Use:
 
 ```
 motionia("body", "popZ")
-
+```
 or 
-
+```
 motionia("body", "scaleZ");
-
 ```
 
-Wait....whats **Z** at the end this will animate body's transformation in z axis and can change upon your body's dimension automatically! 
+Wait... what's **Z** at the end? This will animate body's transformation in the z axis and can change upon your body's dimension automatically! 
 
-> Remember **Z** parameter only works in anims where transformation in z axis works , that is have its actual meaning as for those anims which it doesn't work then don't worry just change your base anim's name!
+> Remember **Z** parameter only works in anims where transformation in z axis works, that is have its actual meaning as for those anims which it doesn't work then don't worry just change your base anim's name!
 
 # Animate color of a element quickly 
 
