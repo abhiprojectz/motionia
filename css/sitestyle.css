@@ -1,0 +1,163 @@
+ @import url(https://fonts.googleapis.com/css?family=Raleway);
+  
+  
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  width: 100%;
+  background-color: #000;
+  color:#fff;
+}
+
+img {
+  width:100%;
+  height: 150px;
+}
+
+[item] {
+  display: inline-block;
+}
+
+a {
+
+  text-decoration: none;
+  
+}
+#link {
+
+  color: #fff;
+  font-weight: 800;
+  padding: 10px;
+  margin-top: 5px;
+  border: 3px solid #D24335;
+  font-family: 'Raleway';
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Solution */
+[container] {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:4%; /* even spacing using grid-gap, You can use percentage values if you want*/
+    padding:20px;
+    margin: auto;
+}
+
+
+[item]{
+    padding: 10px;
+    width: 90%;
+    margin:auto;
+    margin-bottom: 20vh;
+    background:#008E74;
+     box-shadow: 5px 5px rgba(0, 98, 90, 0.4),
+              10px 10px rgba(0, 98, 90, 0.3),
+              15px 15px rgba(0, 98, 90, 0.2),
+              20px 20px rgba(0, 98, 90, 0.1),
+              25px 25px rgba(0, 98, 90, 0.05);
+}
+
+@media (min-width:700px) {
+
+  [container] {
+    width: 85%;
+    margin: auto;
+     grid-template-columns: repeat(2, 1fr);
+      grid-gap:6%;
+  }
+
+  [item] {
+
+    margin-bottom: 500px;
+  }
+}
+/* Not needed */
+
+#header {
+
+  position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  z-index: 1; 
+  background: white;
+ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+a {
+
+
+  text-decoration: none;
+  color: #008E74;
+}
+
+a:hover {
+
+  color: #fff;
+}
+
+span {
+
+  margin: auto;
+  display: block;
+   color:#008E74;
+  border-bottom:2px solid #008E74;
+  padding: 5px;
+  margin-left: 20px;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'raleway';
+}
+
+span:hover {
+background-color: #000;
+color: #fff;
+}
+
+
+.main {
+  width: 60%;
+  padding:20px;
+  background-color: #eee;
+  display: flex;
+  margin: auto;
+  border-radius: 15px;
+  margin-top: 40vh;
+  margin-bottom: 10vh;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.main > p {
+  color: #008E74;
+  font-weight: 900;
+  font-size: 16px;
+  opacity: 0.7;
+  text-align: center;
+}
+
+#footer {
+  padding: 20px;
+  width: 100%;
+  background-color: #eee;
+  text-align: center;
+}
+
+#footer > p {
+  color: #008E74;
+  font-weight: 900;
+  font-size: 16px;
+  opacity: 0.7;
+  text-align: center;
+}

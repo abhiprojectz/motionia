@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Motionia - animation made Easy!</title>
+      <meta name="title" content"Motionia - animation made Easy!">
+      <meta name="description" content="Motionia is a lightweight simplified on demand animation library!
+         A lightweight JS animation library.">
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://abhiprojectz.github.com/motionia">
+      <meta property="og:title" content="Motionia - animation made Easy!">
+      <meta property="og:description" content="Motionia is a lightweight simplified on demand animation library!
+         A lightweight JS animation library.">
+      <meta name="keywords" content="motion,animation , js , css, animation library, animation generator">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/css/froala_blocks.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/abhiprojectz/motionia@v1.0/dist/motionia.js"></script>
+      <link href="https://anicode.in/motionia/css/motionia.css" rel="stylesheet">
+   </head>
+   <style data-fp="">
+      body, html {
+      margin: 0;
+      height: 100%;
+      }
+      body.no-block {
+      flex-flow: column;
+      overflow-x: hidden;
+      display: flex;
+      }
+      body {
+      background: #DEDEDE;
+      }
+      .fp-no-block {
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-direction: column;
+      cursor: pointer;
+      color: #444;
+      display: none;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      text-align: center;
+      background: #FFF;
+      transition: margin 0.25s linear 0.25s;
+      }
+      .fp-no-block:hover {
+      background: #EFEFEF;
+      }
+      .fp-no-block.fp-visible {
+      display: flex;
+      }
+      .fp-no-sections {
+      flex: 2;
+      }
+      .fp-no-block p {
+      margin: 0;
+      }
+      .fp-no-sections p + p {
+      font-size: 16px;
+      margin-top: 5px;
+      }
+      .fdb-block {
+      box-shadow: 0;
+      margin-bottom: 0;
+      transition: margin 0.25s linear 0.25s;
+      }
+      .fp-active {
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.14), 0 0px 6px rgba(0,0,0,0.16);
+      -moz-box-shadow: 0px 0px 20px rgba(0,0,0,0.14), 0 0px 6px rgba(0,0,0,0.16);
+      -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.14), 0 0px 6px rgba(0,0,0,0.16);
+      z-index: 9999;
+      }
+      body.fp-add-view [data-block-type],
+      body.fp-add-view .fp-no-block {
+      margin-bottom: 20px;
+      }
+      body.fp-add-view [data-block-type] {
+      user-select: none;
+      position: relative;
+      }
+      body.fp-add-view section[data-block-type] {
+      cursor: move;
+      }
+      body.fp-add-view [data-block-type]:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      z-index: 10000;
+      content: "";
+      }
+      .fp-drop-placeholder {
+      height: 200px;
+      width: 100%;
+      border: solid 10px  #0098f7;
+      background: #FFF;
+      margin-bottom: 20px;
+      }
+      .fp-dragging {
+      display: none;
+      }
+      .fr-popup {
+      z-index: 10000 !important;
+      }
+      img.fr-dib {
+      margin: 5px auto;
+      display: block;
+      float: none;
+      vertical-align: top;
+      }
+      span.fr-emoticon.fr-emoticon-img {
+      background-repeat: no-repeat !important;
+      font-size: inherit;
+      height: 1em;
+      width: 1em;
+      min-height: 20px;
+      min-width: 20px;
+      display: inline-block;
+      margin: -.1em .1em .1em;
+      line-height: 1;
+      vertical-align: middle;
+      }
+   </style>
+   <body>
+      <header data-block-type="headers" data-id="15" class="">
+         <div class="container">
+            <nav class="navbar navbar-expand-md no-gutters">
+               <div class="col-3 text-left">
+                  <p><a href="http://anicode.in"><img src="img/logo.png" height="30" alt="image"></a></p>
+               </div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse-2" aria-controls="navbarNav7" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse navbar-collapse-2 justify-content-center col-md-6" id="navbarNav7">
+                  <ul class="navbar-nav justify-content-center">
+                     <li class="nav-item active"><br></li>
+                     <li class="nav-item"><a class="nav-link" href="http://anicode.in" contenteditable="false">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="http://anicode.in/alertia" contenteditable="false">Alertia JS</a></li>
+                     <li class="nav-item"><a class="nav-link" href="http://anicode.in/tour" contenteditable="false">Take a tour!</a></li>
+                     <li class="nav-item"><a class="nav-link" href="http://anicode.in" contenteditable="false">About us</a></li>
+                  </ul>
+               </div>
+               <div class="collapse navbar-collapse navbar-collapse-2"></div>
+            </nav>
+         </div>
+      </header>
+      <section class="fdb-block fp-active" data-block-type="contents" data-id="1">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+                  <h1>This is a live preview!</h1>
+                  <p class="lead mb-5">Just click on different anims block</p>
+                  <p class="lead mb-5">which includes both anims combination and runs by a click.</p>
+                  <p class="lead mb-5"><span style="color: rgb(26, 188, 156);"><strong>The target elem here is the&nbsp;</strong></span><span style="color: rgb(44, 130, 201);"><strong>blue&nbsp;</strong></span><span style="color: rgb(26, 188, 156);"><strong>box.</strong></span></p>
+                  <p><strong>Works in every browser:</strong></p>
+                  <p class="h1 text-muted">
+                     <svg class="svg-inline--fa fa-chrome fa-w-16 mr-3" aria-hidden="true" data-prefix="fab" data-icon="chrome" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M131.5 217.5L55.1 100.1c47.6-59.2 119-91.8 192-92.1 42.3-.3 85.5 10.5 124.8 33.2 43.4 25.2 76.4 61.4 97.4 103L264 133.4c-58.1-3.4-113.4 29.3-132.5 84.1zm32.9 38.5c0 46.2 37.4 83.6 83.6 83.6s83.6-37.4 83.6-83.6-37.4-83.6-83.6-83.6-83.6 37.3-83.6 83.6zm314.9-89.2L339.6 174c37.9 44.3 38.5 108.2 6.6 157.2L234.1 503.6c46.5 2.5 94.4-7.7 137.8-32.9 107.4-62 150.9-192 107.4-303.9zM133.7 303.6L40.4 120.1C14.9 159.1 0 205.9 0 256c0 124 90.8 226.7 209.5 244.9l63.7-124.8c-57.6 10.8-113.2-20.8-139.5-72.5z"></path>
+                     </svg>
+                     <!-- <i class="fab fa-chrome mr-3"></i> --> 
+                     <svg class="svg-inline--fa fa-safari fa-w-16 mr-3" aria-hidden="true" data-prefix="fab" data-icon="safari" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M274.69,274.69l-37.38-37.38L166,346ZM256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8ZM411.85,182.79l14.78-6.13A8,8,0,0,1,437.08,181h0a8,8,0,0,1-4.33,10.46L418,197.57a8,8,0,0,1-10.45-4.33h0A8,8,0,0,1,411.85,182.79ZM314.43,94l6.12-14.78A8,8,0,0,1,331,74.92h0a8,8,0,0,1,4.33,10.45l-6.13,14.78a8,8,0,0,1-10.45,4.33h0A8,8,0,0,1,314.43,94ZM256,60h0a8,8,0,0,1,8,8V84a8,8,0,0,1-8,8h0a8,8,0,0,1-8-8V68A8,8,0,0,1,256,60ZM181,74.92a8,8,0,0,1,10.46,4.33L197.57,94a8,8,0,1,1-14.78,6.12l-6.13-14.78A8,8,0,0,1,181,74.92Zm-63.58,42.49h0a8,8,0,0,1,11.31,0L140,128.72A8,8,0,0,1,140,140h0a8,8,0,0,1-11.31,0l-11.31-11.31A8,8,0,0,1,117.41,117.41ZM60,256h0a8,8,0,0,1,8-8H84a8,8,0,0,1,8,8h0a8,8,0,0,1-8,8H68A8,8,0,0,1,60,256Zm40.15,73.21-14.78,6.13A8,8,0,0,1,74.92,331h0a8,8,0,0,1,4.33-10.46L94,314.43a8,8,0,0,1,10.45,4.33h0A8,8,0,0,1,100.15,329.21Zm4.33-136h0A8,8,0,0,1,94,197.57l-14.78-6.12A8,8,0,0,1,74.92,181h0a8,8,0,0,1,10.45-4.33l14.78,6.13A8,8,0,0,1,104.48,193.24ZM197.57,418l-6.12,14.78a8,8,0,0,1-14.79-6.12l6.13-14.78A8,8,0,1,1,197.57,418ZM264,444a8,8,0,0,1-8,8h0a8,8,0,0,1-8-8V428a8,8,0,0,1,8-8h0a8,8,0,0,1,8,8Zm67-6.92h0a8,8,0,0,1-10.46-4.33L314.43,418a8,8,0,0,1,4.33-10.45h0a8,8,0,0,1,10.45,4.33l6.13,14.78A8,8,0,0,1,331,437.08Zm63.58-42.49h0a8,8,0,0,1-11.31,0L372,383.28A8,8,0,0,1,372,372h0a8,8,0,0,1,11.31,0l11.31,11.31A8,8,0,0,1,394.59,394.59ZM286.25,286.25,110.34,401.66,225.75,225.75,401.66,110.34ZM437.08,331h0a8,8,0,0,1-10.45,4.33l-14.78-6.13a8,8,0,0,1-4.33-10.45h0A8,8,0,0,1,418,314.43l14.78,6.12A8,8,0,0,1,437.08,331ZM444,264H428a8,8,0,0,1-8-8h0a8,8,0,0,1,8-8h16a8,8,0,0,1,8,8h0A8,8,0,0,1,444,264Z"></path>
+                     </svg>
+                     <!-- <i class="fab fa-safari mr-3"></i> --> 
+                     <svg class="svg-inline--fa fa-firefox fa-w-16 mr-3" aria-hidden="true" data-prefix="fab" data-icon="firefox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M503.52,241.48c-.12-1.56-.24-3.12-.24-4.68v-.12l-.36-4.68v-.12a245.86,245.86,0,0,0-7.32-41.15c0-.12,0-.12-.12-.24l-1.08-4c-.12-.24-.12-.48-.24-.6-.36-1.2-.72-2.52-1.08-3.72-.12-.24-.12-.6-.24-.84-.36-1.2-.72-2.4-1.08-3.48-.12-.36-.24-.6-.36-1-.36-1.2-.72-2.28-1.2-3.48l-.36-1.08c-.36-1.08-.84-2.28-1.2-3.36a8.27,8.27,0,0,0-.36-1c-.48-1.08-.84-2.28-1.32-3.36-.12-.24-.24-.6-.36-.84-.48-1.2-1-2.28-1.44-3.48,0-.12-.12-.24-.12-.36-1.56-3.84-3.24-7.68-5-11.4l-.36-.72c-.48-1-.84-1.8-1.32-2.64-.24-.48-.48-1.08-.72-1.56-.36-.84-.84-1.56-1.2-2.4-.36-.6-.6-1.2-1-1.8s-.84-1.44-1.2-2.28c-.36-.6-.72-1.32-1.08-1.92s-.84-1.44-1.2-2.16a18.07,18.07,0,0,0-1.2-2c-.36-.72-.84-1.32-1.2-2s-.84-1.32-1.2-2-.84-1.32-1.2-1.92-.84-1.44-1.32-2.16a15.63,15.63,0,0,0-1.2-1.8L463.2,119a15.63,15.63,0,0,0-1.2-1.8c-.48-.72-1.08-1.56-1.56-2.28-.36-.48-.72-1.08-1.08-1.56l-1.8-2.52c-.36-.48-.6-.84-1-1.32-1-1.32-1.8-2.52-2.76-3.72a248.76,248.76,0,0,0-23.51-26.64A186.82,186.82,0,0,0,412,62.46c-4-3.48-8.16-6.72-12.48-9.84a162.49,162.49,0,0,0-24.6-15.12c-2.4-1.32-4.8-2.52-7.2-3.72a254,254,0,0,0-55.43-19.56c-1.92-.36-3.84-.84-5.64-1.2h-.12c-1-.12-1.8-.36-2.76-.48a236.35,236.35,0,0,0-38-4H255.14a234.62,234.62,0,0,0-45.48,5c-33.59,7.08-63.23,21.24-82.91,39-1.08,1-1.92,1.68-2.4,2.16l-.48.48H124l-.12.12.12-.12a.12.12,0,0,0,.12-.12l-.12.12a.42.42,0,0,1,.24-.12c14.64-8.76,34.92-16,49.44-19.56l5.88-1.44c.36-.12.84-.12,1.2-.24,1.68-.36,3.36-.72,5.16-1.08.24,0,.6-.12.84-.12C250.94,20.94,319.34,40.14,367,85.61a171.49,171.49,0,0,1,26.88,32.76c30.36,49.2,27.48,111.11,3.84,147.59-34.44,53-111.35,71.27-159,24.84a84.19,84.19,0,0,1-25.56-59,74.05,74.05,0,0,1,6.24-31c1.68-3.84,13.08-25.67,18.24-24.59-13.08-2.76-37.55,2.64-54.71,28.19-15.36,22.92-14.52,58.2-5,83.28a132.85,132.85,0,0,1-12.12-39.24c-12.24-82.55,43.31-153,94.31-170.51-27.48-24-96.47-22.31-147.71,15.36-29.88,22-51.23,53.16-62.51,90.36,1.68-20.88,9.6-52.08,25.8-83.88-17.16,8.88-39,37-49.8,62.88-15.6,37.43-21,82.19-16.08,124.79.36,3.24.72,6.36,1.08,9.6,19.92,117.11,122,206.38,244.78,206.38C392.77,503.42,504,392.19,504,255,503.88,250.48,503.76,245.92,503.52,241.48Z"></path>
+                     </svg>
+                     <!-- <i class="fab fa-firefox mr-3"></i> --> 
+                     <svg class="svg-inline--fa fa-edge fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="edge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M481.92,134.48C440.87,54.18,352.26,8,255.91,8,137.05,8,37.51,91.68,13.47,203.66c26-46.49,86.22-79.14,149.46-79.14,79.27,0,121.09,48.93,122.25,50.18,22,23.8,33,50.39,33,83.1,0,10.4-5.31,25.82-15.11,38.57-1.57,2-6.39,4.84-6.39,11,0,5.06,3.29,9.92,9.14,14,27.86,19.37,80.37,16.81,80.51,16.81A115.39,115.39,0,0,0,444.94,322a118.92,118.92,0,0,0,58.95-102.44C504.39,176.13,488.39,147.26,481.92,134.48ZM212.77,475.67a154.88,154.88,0,0,1-46.64-45c-32.94-47.42-34.24-95.6-20.1-136A155.5,155.5,0,0,1,203,215.75c59-45.2,94.84-5.65,99.06-1a80,80,0,0,0-4.89-10.14c-9.24-15.93-24-36.41-56.56-53.51-33.72-17.69-70.59-18.59-77.64-18.59-38.71,0-77.9,13-107.53,35.69C35.68,183.3,12.77,208.72,8.6,243c-1.08,12.31-2.75,62.8,23,118.27a248,248,0,0,0,248.3,141.61C241.78,496.26,214.05,476.24,212.77,475.67Zm250.72-98.33a7.76,7.76,0,0,0-7.92-.23,181.66,181.66,0,0,1-20.41,9.12,197.54,197.54,0,0,1-69.55,12.52c-91.67,0-171.52-63.06-171.52-144A61.12,61.12,0,0,1,200.61,228,168.72,168.72,0,0,0,161.85,278c-14.92,29.37-33,88.13,13.33,151.66,6.51,8.91,23,30,56,47.67,23.57,12.65,49,19.61,71.7,19.61,35.14,0,115.43-33.44,163-108.87A7.75,7.75,0,0,0,463.49,377.34Z"></path>
+                     </svg>
+                     <!-- <i class="fab fa-edge"></i> -->
+                  </p>
+               </div>
+               <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
+                  <p><img alt="image" class="img-fluid" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/imgs//draws/browsers.svg"></p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div id="container">
+         <h1>Appear in a element!</h1>
+         <div id="in" class="collection">
+            <span>fadeIn</span>
+            <span>rollIn</span>
+            <span>slitIn</span> 
+            <span>parosIn</span>
+            <span>presentIn</span>
+            <span>slideIn</span>
+            <span>tiltIn</span>
+            <span>swingIn</span>
+            <span>flickerIn</span>
+            <span>bounceIn</span>
+            <span>scaleIn</span>
+            <span>rotateIn</span>
+            <span>presIn</span>
+         </div>
+         <div id="box"></div>
+         <h1>Disappear a element!</h1>
+         <div id="out" class="collection">
+            <span>rotateOut</span>
+            <span>bounceOut</span>
+            <span>rollOut</span>
+            <span>slitOut</span> 
+            <span>parosOut</span>
+            <span>presentOut</span>
+            <span>slideOut</span>
+            <span>tiltOut</span>
+            <span>swingOut</span>
+            <span>flickerOut</span>
+            <span>scaleOut</span>
+            <span>presOut</span>
+         </div>
+         <div id="tox"></div>
+         <h1>Customization?</h1>
+         <p class="tag" >Slide up & down a element.</p>
+         <div class="collection">
+            <span onclick="code($(this).attr('onclick')),motionia('#tox','slideY','-50px')" >Slide up by 50px</span>
+            <span onclick="code($(this).attr('onclick')),motionia('#tox','slideY','50px')" >Slide down by 50px</span>
+            <span onclick="code($(this).attr('onclick')),motionia('#tox','slideY','-50%')" >Slide up by 50%</span>
+            <span onclick="code($(this).attr('onclick')),motionia('#tox','slideY','50%')" >Slide down by 50%</span>
+         </div>
+         <p class="tag" >Slide left & right a element.</p>
+         <div class="collection">
+            <span onclick="code($(this).attr('onclick')),motionia('#tox','slideX','-50px')" >Slide left by 50px</span>
+            <span onclick="code($(this).attr('onclick')),motionia('#tox','slideX','50px')" >Slide right by 50px</span>
+            <span onclick="code($(this).attr('onclick')),motionia('#tox','slideX','-50%')" >Slide left by 50%</span>
+            <span onclick="code($(this).attr('onclick')),motionia('#tox','slideX','50%')" >Slide right by 50%</span>
+         </div>
+         <p id="code"></p>
+         <br /><br />
+      </div>
+      <section class="fdb-block bg-dark fp-active" style="background-image: url(https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/imgs//hero/purple.svg);" data-block-type="features" data-id="3">
+         <div class="container">
+            <div class="row">
+               <div class="col text-center">
+                  <h1>Motionia.js at a glance!</h1>
+               </div>
+            </div>
+            <div class="row-70"></div>
+            <div class="row text-center justify-content-sm-center no-gutters">
+               <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-3 m-auto">
+                  <div class="fdb-box fdb-touch">
+                     <h2>Easy to integrate.</h2>
+                     <p>With the help of a line you can easily animate a elems and even its attributes..</p>
+                     <p class="mt-4">
+                        <a href="http://anicode.in/motionia/docs">
+                           Learn More 
+                           <svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true" data-prefix="fas" data-icon="angle-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg="">
+                              <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                           </svg>
+                           <!-- <i class="fas fa-angle-right"></i> -->
+                        </a>
+                     </p>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-3 m-auto pt-5 pt-xl-0">
+                  <div class="fdb-box fdb-touch">
+                     <h2>Json formatting</h2>
+                     <p>Supports <strong>Json-formatting&nbsp;</strong></p>
+                     <p>for easy and supper fast integration</p>
+                     <p>saves lots of time..</p>
+                     <p class="mt-4">
+                        <a href="http://anicode.in/motionia/docs">
+                           Learn More 
+                           <svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true" data-prefix="fas" data-icon="angle-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg="">
+                              <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                           </svg>
+                           <!-- <i class="fas fa-angle-right"></i> -->
+                        </a>
+                     </p>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-3 m-auto pt-5 pt-xl-0">
+                  <div class="fdb-box fdb-touch">
+                     <h2>Thousands of possibilities</h2>
+                     <p>Its totally depends upon</p>
+                     <p>your <strong>imagination&nbsp;</strong>visit the docs below for more.</p>
+                     <p class="mt-4">
+                        <a href="http://anicode.in/motionia/docs">
+                           Learn More 
+                           <svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true" data-prefix="fas" data-icon="angle-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg="">
+                              <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                           </svg>
+                           <!-- <i class="fas fa-angle-right"></i> -->
+                        </a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="fdb-block footer-small bg-dark" data-block-type="footers" data-id="12">
+         <div class="container">
+            <div class="row text-center align-items-center">
+               <div class="col">
+                  <ul class="nav justify-content-center">
+                     <li class="nav-item"><a class="nav-link active" contenteditable="false" href="https://www.froala.com" style="outline: none; display: inline-block;">Home</a></li>
+                     <li class="nav-item"><a class="nav-link fr-view" contenteditable="false" href="https://anicode.in/alertia" style="outline: none; display: inline-block;">Alertia JS</a></li>
+                     <li class="nav-item"><a class="nav-link fr-view" contenteditable="false" href="http://anicode.in/CSS-Generator" style="outline: none; display: inline-block;">CSS generator</a></li>
+                     <li class="nav-item"><a class="nav-link fr-view" contenteditable="false" href="https://www.froala.com" style="outline: none; display: inline-block;">Terms</a></li>
+                     <li class="nav-item"><a class="nav-link fr-view" contenteditable="false" href="http://anicode.in/aboutme" rel="noopener noreferrer" style="outline: none; display: inline-block;" target="_blank">About us</a></li>
+                  </ul>
+                  <p class="h5 mt-5">© 2020 anicode.in inc &nbsp;|| &nbsp;@abhiprojectz</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+   </body>
+   <script>
+      $("#in span").click(function(){var a=$(this).html();motionia("#box",a)});$("#out span").click(function(){var a=$(this).html();motionia("#box",a)});function code(b){var a=b.substr(30);$("#code").html("Your Output: "+a);motionia("#code","slitIn")}$(".right").click(function(){$("#meenu").slideDown()});
+   </script>
+</html>

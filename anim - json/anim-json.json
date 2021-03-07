@@ -1,0 +1,127 @@
+[
+
+        "In": {
+
+            "opacityMin": "fadeIn",
+
+            "anim2": "slideIn",
+
+             "anim3": "slitIn",
+
+                "anim4": "puffIn",
+
+                "anim5": "swirlIn",
+
+                "anim6": "rollIn",
+
+                "anim7": "swingIn",
+
+                "anim8": "rotateIn",
+
+                "anim9": "parosIn",
+
+                "anim10": "presentIn",
+
+                "anim11": "presIn",
+
+                "anim12": "explodeIn",
+
+                "anim13": "popIn",
+
+                "anim14": "bounceIn",
+
+                "anim15": "scaleIn",
+
+                "anim16": "flickerIn",
+
+                "anim17": "tiltIn",
+
+                  "anim18": "swapIn",
+
+               
+
+        },
+
+        
+
+        "Out": 
+
+        {
+
+            "opacityNull": "fadeOut",
+
+            "anim2": "slideOut",
+
+             "anim3": "slitOut",
+
+                "anim4": "puffOut",
+
+                "anim5": "swirlOut",
+
+                "anim6": "rollOut",
+
+                "anim7": "swingOut",
+
+                "anim8": "rotateOut",
+
+                "anim9": "parosOut",
+
+                "anim10": "presentOut",
+
+                "anim11": "presOut",
+
+                "anim12": "explodeOut",
+
+                "anim13": "popOut",
+
+                "anim14": "bounceOut",
+
+                "anim15": "scaleOut",
+
+                "anim16": "flickerOut",
+
+                "anim17": "tiltOut",
+
+                  "anim18": "swapOut"
+
+               
+
+        },
+
+        "Min": {
+
+            "intensityMin": "vibrateMin",
+
+            "anim2": "shakeMin",
+
+             "anim3": "jellyMin",
+
+                "anim4": "tiltMin",
+
+                "anim5": "blinkMin",
+
+                "anim6": "bounceMin"
+
+            
+
+        },
+
+         "Max": {
+
+            "intensityMin": "vibrateMax",
+
+            "anim2": "shakeMax",
+
+             "anim3": "jellyMax",
+
+                "anim4": "tiltMax",
+
+                "anim5": "blinkMax",
+
+                "anim6": "bounceMax"
+
+            
+
+        }
+
+]
